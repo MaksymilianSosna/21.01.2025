@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 100vw;
+}
+
+.hero{
+    width: 30vw;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: left;
+    border-right: 1px solid rgb(104, 101, 101);
+}
+
+.hero-logo{
+    display: flex;
+}
+
+.hero-nav{
+    margin: 10px 10px 10px;
+    float: left;
+
+}
+ul{
+    float: left;
+}
+
+.li-nav{
+    margin: 30px;
+    list-style: none;
+}
+i{
+    margin-right: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+#logo{
+    margin: 10px 10px 10px;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.house{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.hero-button{
+    margin: 10px 10px 10px;
+    margin-left: 30px;
+    width: 200px;
+}
+
+.header-button{
+    width: 237px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.hero-account{
+    color: white;
+    display: flex;
+    margin: 30px;
+}
+
+.hero-main{
+    width: 40vw;
+    height: 1000px;
+    float: left;
+}
+
+.account{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.usernameone{
+    font-size: 10px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      
+}
+
+.usernametwo{
+    font-size: 10px;
+    color: grey;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.hero-main-nav{
+    float: left;
+    width: 40vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(104, 101, 101);
+
+}
+
+.nav-li{
+    list-style: none;
+    margin: 10px 10px 10px;
+}
+
+.ul-nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.one{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: flex-end;
+}
+
+.one a{
+    font-size: 20px;
+    color: white;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.block{
+    width: 3vw;
+    height: 2px;
+    background-color: rgb(70, 181, 255);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.two{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two a{
+    font-size: 15px;
+    color: grey;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.block-one{
+    width: 3vw;
+    height: 2px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.command-box{
+    width: 40vw;
+    height: 949px;
+    float: left;
+    background-color: black;
+}
+
+h1{
+    width: 200px;
+}
