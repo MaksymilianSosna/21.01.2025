@@ -73,8 +73,19 @@
                 </div>
             </div>
             <div class="command-box">
-                <div class="command-logo">
-                    <i style="font-size: 45px; color: white;" class="bi bi-person-circle"></i>
+                <div class="command-box-old">
+                    <div class="command-logo">
+                        <i style="font-size: 45px; color: white;" class="bi bi-person-circle"></i>
+                        <input class="command-text" type="text" placeholder="Co się dzieje?!">
+                    </div>
+                    <div class="command-button">
+                        <button type="submit" disabled id="publish">Opublikuj wpis</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article-section">
+                <div class="article">
+
                 </div>
             </div>
         </div>
@@ -83,6 +94,7 @@
     <footer>
         <div class="hero-footer">
             <div class="footer-search">
+                <input class="search" type="search" placeholder="Szukaj...">
             </div>
             <div class="footer-subscribe">
                 <h1>Zasubskrubuj usługę Premium</h1>
@@ -96,7 +108,7 @@
                 <div class="hero-account">
                     <div class="account">
                         <div class="logo">
-                            <img src="profil.jpg" alt="profil">
+                            <i style="font-size: 45px;" class="bi bi-person-circle"></i>
                         </div>
                         <div class="name">
                             <p>Nazwa użytkownika</p>
@@ -111,7 +123,7 @@
                 <div class="hero-account">
                     <div class="account">
                         <div class="logo">
-                            <img src="profil.jpg" alt="profil">
+                            <i style="font-size: 45px;" class="bi bi-person-circle"></i>
                         </div>
                         <div class="name">
                             <p>Nazwa użytkownika</p>
@@ -123,23 +135,9 @@
                     </div>
                 </div>
 
-                <div class="hero-account">
-                    <div class="account">
-                        <div class="logo">
-                            <img src="profil.jpg" alt="profil">
-                        </div>
-                        <div class="name">
-                            <p>Nazwa użytkownika</p>
-                            <p>@Nickaname użytkownika</p>
-                        </div>
-                        <div class="more">
-                            <button>Obserwuj</button>
-                        </div>
-                    </div>
                     <div class="footer-more">
                         <a href="#">Pokaż więcej</a>
                     </div>
-                </div>
             </div>
             <div class="hero-news">
                 <div class="hero-one">
@@ -172,6 +170,66 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        "use strict";
+
+        const userId = {
+            name: null,
+            identity: null,
+            image: null,
+            message: null,
+            date: null,
+        }
+
+        const userComment = document.querySelector(".command-text")
+        const publishBtn = document.querySelector("#publish");
+        const article = document.querySelector(".article");
+        const userName = document.querySelector(".usernameone")
+
+        userComment.addEventListener("input", e =>{
+            if(!userComment.value){
+                publishBtn.setAttribute("disable", "disabled");
+                publishBtn.classList.remove("abled")
+            }else{
+                publishBtn.removeAttribute("disabled");
+                publishBtn.classList.add("abled");
+            }
+        })
+
+
+        function addPost() {
+            console.log("The button works")
+            if(!userComment.value) return;
+            userId.name = userName.value;
+            if(userId.name === "Nazwa użytkownika") {
+                userId.identity = false;
+                userId.image = "bi bi-person-circle";
+            }else {
+                userId.identity = true;
+                userId.image = "bi bi-person-circle";
+            }
+
+            userId.message = userComment.value;
+            userId.date = new Date().toLocaleString();
+            let published =
+            `<div class="comment">
+                <div class ="comment-box">
+                    <h1>${userId.name}</h1>
+                    <p>${userId.message}</p>
+                    <span class = "date">${userId.date}</span>
+                </div>
+            </div>`;
+
+            article.innerHTML += published;
+            userComment.value = "";
+
+        }
+
+        publishBtn.addEventListener("click", addPost)
+
+    </script>
+
 </body>
 
 </html>

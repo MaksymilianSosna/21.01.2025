@@ -5,6 +5,7 @@
 
 body{
     min-width: 100vw;
+    background-color: black;
 }
 
 .hero{
@@ -95,6 +96,7 @@ a{
     width: 40vw;
     height: 1000px;
     float: left;
+    border-right: 1px solid rgb(104, 101, 101);
 }
 
 .account{
@@ -208,11 +210,239 @@ a{
 
 .command-box{
     width: 40vw;
-    height: 949px;
     float: left;
     background-color: black;
+    border-right: 1px solid rgb(104, 101, 101);
+    margin-bottom: 20px;
+}
+
+.command-box-old{
+    height: 125px;
+    border-bottom: 1px solid rgb(104, 101, 101);
 }
 
 h1{
     width: 200px;
 }
+
+.command-logo{
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 20px;
+    border-bottom: solid 1px rgb(104, 101, 101);
+    
+}
+
+.command-text{
+    border: solid 1px black;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+}
+
+.command-button{
+    float: right;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.command-button button{
+    width: 150px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(179, 179, 179);
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.command-button button.abled{
+    background: white;
+}
+
+.button-publish abled{
+    background-color: white;
+}
+
+.article-section{
+    width: 40vw;
+    height: 783px;
+    float: left;
+}
+
+.comment{
+    color: white;
+    height: 150px;
+    margin: 20px;
+    border: solid 1px rgb(104, 101, 101);
+}
+
+.comment-box{
+    margin: 30px;
+}
+
+.comment-box h1, p, span{
+    margin-bottom: 10px;
+}
+
+footer{
+    float: right;
+    width: 29vw;
+}
+
+.footer-search{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    width: 250px;
+    height: 30px;
+    color: white;
+    border-radius: 50px;
+    border: solid 1px rgb(104, 101, 101);
+    background-color: black;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.footer-subscribe{
+    color: white;
+    border: solid 1px rgb(104, 101, 101);
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    display: block;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.footer-subscribe h1{
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+    width: 100%;
+}
+
+.footer-subscribe p{
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+    width: 90%;
+}
+
+.footer-subscribe button{
+    background-color: rgb(14, 131, 209);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+}
+
+.footer-subscribe h1, p, button{
+    margin: 10px;
+}
+
+.footer-observators{
+    width: 25vw;
+    border: solid 1px rgb(104, 101, 101);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.footer-observators h1{
+    color: white;
+    width: 20vw;
+    margin: 25px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+}
+
+.hero-account p{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+}
+
+.hero-account .account .more button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+}
+
+.footer-more{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 20px;
+}
+
+.hero-news{
+    color: white;
+    width: 25vw;
+    margin: 20px;
+    border: solid 1px rgb(104, 101, 101);
+    border-radius: 20px;
+    
+}
+
+.hero-one{
+    margin: 10px;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+     
+}
+
