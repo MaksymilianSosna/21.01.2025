@@ -144,28 +144,27 @@
                     <p>Najpopularniejsze w Polska</p>
                     <p>Pinokio</p>
                     <p>Wpisy: 2205</p>
-                    <i class="bi bi-three-dots"></i>
+                    <div class="more-icon">
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
 
                 <div class="hero-one">
                     <p>Najpopularniejsze w Polska</p>
                     <p>Pinokio</p>
                     <p>Wpisy: 2205</p>
-                    <i class="bi bi-three-dots"></i>
+                    <div class="more-icon">
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
 
                 <div class="hero-one">
                     <p>Najpopularniejsze w Polska</p>
                     <p>Pinokio</p>
                     <p>Wpisy: 2205</p>
-                    <i class="bi bi-three-dots"></i>
-                </div>
-
-                <div class="hero-one">
-                    <p>Najpopularniejsze w Polska</p>
-                    <p>Pinokio</p>
-                    <p>Wpisy: 2205</p>
-                    <i class="bi bi-three-dots"></i>
+                    <div class="more-icon">
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,9 +186,10 @@
         const article = document.querySelector(".article");
         const userName = document.querySelector(".usernameone")
 
+
         userComment.addEventListener("input", e =>{
             if(!userComment.value){
-                publishBtn.setAttribute("disable", "disabled");
+                publishBtn.setAttribute("disabled", "disabled");
                 publishBtn.classList.remove("abled")
             }else{
                 publishBtn.removeAttribute("disabled");
@@ -213,20 +213,43 @@
             userId.message = userComment.value;
             userId.date = new Date().toLocaleString();
             let published =
-            `<div class="comment">
+            `<div id="comment" class="comment">
                 <div class ="comment-box">
                     <h1>${userId.name}</h1>
                     <p>${userId.message}</p>
                     <span class = "date">${userId.date}</span>
+                     <button type="submit" class="remove" id="remove" onclick='removeComment()'>Usuń wpis</button>  
                 </div>
             </div>`;
 
             article.innerHTML += published;
             userComment.value = "";
 
+        
+
+            
+
         }
 
         publishBtn.addEventListener("click", addPost)
+
+        function removeComment(){
+            var element = document.getElementById('comment');
+            element.remove();
+
+
+        }
+
+        function readAll(){
+            localStorage.setItem("userId", JSON.stringify(userId));
+            var tabledata = document.querySelector(".comment")
+
+            var userId = localStorage.getItem('userId');
+            var userIdData = JSON.parse(userId);
+            var elements
+        }
+
+        
 
     </script>
 

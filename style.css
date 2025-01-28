@@ -270,9 +270,7 @@ h1{
     background: white;
 }
 
-.button-publish abled{
-    background-color: white;
-}
+
 
 .article-section{
     width: 40vw;
@@ -428,15 +426,18 @@ footer{
 
 .hero-news{
     color: white;
+    height: 405px;
     width: 25vw;
     margin: 20px;
     border: solid 1px rgb(104, 101, 101);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
 .hero-one{
-    margin: 10px;
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -446,3 +447,25 @@ footer{
      
 }
 
+.remove{
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-top: -1px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 300;
+}
+
+.more-icon{
+  margin-left: 10px;  
+    
+}
