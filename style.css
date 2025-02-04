@@ -10,7 +10,7 @@ body{
 
 .hero{
     width: 30vw;
-    height: 1000px;
+    height: 1100px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -21,19 +21,19 @@ body{
 
 .hero-logo{
     display: flex;
+    flex-direction: column;
+    
 }
 
-.hero-nav{
-    margin: 10px 10px 10px;
-    float: left;
+ul{ 
+    display: flex;
+    flex-direction: column;
+}
 
-}
-ul{
-    float: left;
-}
 
 .li-nav{
-    margin: 30px;
+    margin: 20px;
+    margin-right: 50px;
     list-style: none;
 }
 i{
@@ -52,12 +52,6 @@ a{
       "wdth" 100;
 }
 
-#logo{
-    margin: 10px 10px 10px;
-    margin-left: 30px;
-    font-size: 30px;
-}
-
 .house{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -69,8 +63,7 @@ a{
 
 .hero-button{
     margin: 10px 10px 10px;
-    margin-left: 30px;
-    width: 200px;
+    margin-right: 50px;
 }
 
 .header-button{
@@ -88,21 +81,20 @@ a{
 
 .hero-account{
     color: white;
-    display: flex;
-    margin: 30px;
 }
 
 .hero-main{
     width: 40vw;
-    height: 1000px;
+    height: 1100px;
     float: left;
     border-right: 1px solid rgb(104, 101, 101);
 }
 
 .account{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
 
 .usernameone{
@@ -134,7 +126,6 @@ a{
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: row;
     border-bottom: 1px solid rgb(104, 101, 101);
 
 }
@@ -150,6 +141,10 @@ a{
     height: 50px;
 }
 
+.nav-p{
+    margin: 0;
+}
+
 .one{
     width: 20vw;
     display: flex;
@@ -157,6 +152,10 @@ a{
     justify-content: center;
     position: relative;
     align-items: flex-end;
+}
+
+#oneMore{
+    margin-left: 10px;
 }
 
 .one a{
@@ -216,6 +215,8 @@ a{
     margin-bottom: 20px;
 }
 
+
+
 .command-box-old{
     height: 125px;
     border-bottom: 1px solid rgb(104, 101, 101);
@@ -268,6 +269,7 @@ h1{
 
 .command-button button.abled{
     background: white;
+    cursor: pointer;
 }
 
 
@@ -383,7 +385,7 @@ footer{
 .footer-observators h1{
     color: white;
     width: 20vw;
-    margin: 25px;
+    margin: 15px;
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -392,16 +394,23 @@ footer{
       "wdth" 300;
 }
 
-.hero-account p{
+.account-obs{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-obs p{
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
       "wdth" 300;
 }
 
-.hero-account .account .more button{
+.account-obs .account .more button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,26 +423,26 @@ footer{
     font-style: normal;
     font-variation-settings:
       "wdth" 300;
+    border-radius: 25px;
+    border: none;
 }
 
-.footer-more{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    border: solid 1px rgb(104, 101, 101);
-    border-radius: 20px;
+
+.footer-more p {
+    color: rgb(1, 127, 230);
+    font-size: 15px;
 }
 
 .hero-news{
     color: white;
     height: 405px;
     width: 25vw;
-    margin: 20px;
     border: solid 1px rgb(104, 101, 101);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 20px;
     
 }
 
@@ -462,10 +471,62 @@ footer{
     font-weight: 800;
     font-style: normal;
     font-variation-settings:
-      "wdth" 300;
+      "wdth" 300; cursor: pointer;
 }
 
 .more-icon{
   margin-left: 10px;  
     
+}
+
+@media only screen and (max-width: 1282px){
+
+    .span-nav{
+        display: none;
+        float: right;
+    }
+
+    .header-button{
+        display: none;
+    }
+
+    .name{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1005px){
+    
+    footer{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 499px){
+    footer{
+        display: none;
+    }
+
+
+    .command-box{
+        width: 100vw;
+    }
+
+    .hero-main-nav{
+        width: 100vw;
+    }
+
+    .one{
+        width: 50vw;
+    }
+
+    .two{
+        width: 50vw;
+    }
+
+    .article-section{
+        width: 100vw;
+    }
 }
